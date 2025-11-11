@@ -1,0 +1,23 @@
+{% extends "fiches/base.html" %} {% load crispy_forms_tags %} {% block content%}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card shadow">
+      <div class="card-body">
+        <h2 class="card-title text-center">Connexion</h2>
+        <form method="POST">
+          {% csrf_token %} {{ form|crispy }}
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Se connecter</button>
+          </div>
+        </form>
+        <div class="text-center mt-3">
+          <p>
+            Vous n'avez pas de compte ?
+            <a href="{% url 'register' %}">Inscrivez-vous</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

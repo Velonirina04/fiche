@@ -1,0 +1,104 @@
+{% extends "fiches/base.html" %} {% block content %}
+<div class="row">
+  <div class="col-12 text-center mb-5">
+    <h1 class="display-4 text-primary">Application de Fiches Personnel</h1>
+    <p class="lead">Gérez efficacement les informations de votre personnel</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body text-center">
+        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+        <h5 class="card-title">Consultation des fiches</h5>
+        <p class="card-text">
+          Accédez aux informations détaillées de chaque membre du personnel.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body text-center">
+        <i class="fas fa-search fa-3x text-primary mb-3"></i>
+        <h5 class="card-title">Recherche avancée</h5>
+        <p class="card-text">
+          Trouvez rapidement les fiches par nom ou autres critères.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body text-center">
+        <i class="fas fa-file-pdf fa-3x text-primary mb-3"></i>
+        <h5 class="card-title">Export PDF</h5>
+        <p class="card-text">
+          Téléchargez les fiches au format PDF pour archivage.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-12">
+    <h2 class="text-center mb-4">Comment ça fonctionne ?</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <span class="badge bg-primary rounded-circle p-2 me-3">1</span>
+          </div>
+          <div class="flex-grow-1">
+            <h5>Inscription</h5>
+            <p>
+              Créez un compte visiteur pour accéder aux fiches du personnel.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <span class="badge bg-primary rounded-circle p-2 me-3">2</span>
+          </div>
+          <div class="flex-grow-1">
+            <h5>Consultation</h5>
+            <p>
+              Parcourez les fiches et utilisez la recherche pour trouver des
+              informations spécifiques.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <span class="badge bg-primary rounded-circle p-2 me-3">3</span>
+          </div>
+          <div class="flex-grow-1">
+            <h5>Export</h5>
+            <p>Téléchargez les fiches en PDF pour les conserver hors ligne.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="d-flex">
+          <div class="flex-shrink-0">
+            <span class="badge bg-primary rounded-circle p-2 me-3">4</span>
+          </div>
+          <div class="flex-grow-1">
+            <h5>Administration</h5>
+            <p>
+              Les administrateurs peuvent créer, modifier et supprimer des
+              fiches.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
