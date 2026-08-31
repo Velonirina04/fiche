@@ -1,0 +1,36 @@
+# Python/Django
+__pycache__/
+*.py[cod]
+*.sqlite3
+myenv/
+.venv/
+.env
+.env.*
+.vscode/
+.DS_Store
+*.log
+*.pot
+*.pyc
+
+# Media and uploads (if you store user uploaded files outside of a storage service)
+media/
+photos/
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# Coverage
+htmlcov/
+.coverage
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Ignore pip wheel cache
+pip-wheel-metadata/
+
+# Node modules if any
+node_modules/
